@@ -1,0 +1,271 @@
+body {
+    background-color: #e6e4e2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #d78166;
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 0 auto
+
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 0 auto
+}
+
+.cabecalho {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+   
+}
+
+.cabecalho_foto {
+    width: 100%;
+   max-width: 400px;
+}
+
+.cabecalho_nome {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 52px;
+    font-weight: 400;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.cabecalho_descricao {
+    font-size: 16px;
+    font-weight: 300;
+    color: #050505;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 8px;
+    width: 100%;
+    max-width: 700px;
+    margin: 24px auto;
+    box-sizing: border-box;
+
+}
+
+.section_titulo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+    margin: 16px 0;
+}
+
+.subtitulo {
+    padding: 8px;
+    margin: 16px 0;
+    box-sizing: border-box;
+}
+
+.subtitulo_titulo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #050505;
+    margin: 8px 0;
+}
+
+.subtitulo_descricao {
+    font-size: 16px;
+    font-weight: 300;
+    color: #050505;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.footer {
+    width: 100%;
+    height: 42px;
+    background-color: #d78166;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.footer_texto {
+    font-size: 14px;
+    font-weight: 600;
+    color: #050505;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_link {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.footer_link:hover {
+    opacity: .6;
+}
+
+.footer_link:focus {
+    outline: none; 
+    background-color: #fccfc7;
+    border-radius: 50%;
+}
+
+.icone {
+    width: 24px;
+    border-radius: 50%;
+}
+
+.icone_texto {
+    margin: 0 8px;
+}
+
+/* -Galeria- */
+
+  
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    color: #ffffff
+    
+}
+
+.slide img {
+    width: 680px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 680px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius:10px;
+    cursor: pointer;
+    transition: 1s;
+   
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -125%;
+}
+
+.navigation-auto div {
+    border: 2px solid #e8ad9e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.navigation-auto {
+   position: absolute;
+    width: 680px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+   margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #fff;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #fff;
+}
+
